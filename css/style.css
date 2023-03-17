@@ -5,6 +5,7 @@
 }
 #app{
     display: flex;
+    height: 100vh;
 }
 .mainSx{
     border: solid 1px gray;
@@ -16,6 +17,8 @@
 .mainDx{
     border: solid 1px gray;
     display: inline-block;
+   width: 100%;
+   
  
 }
 .userListHeader{
@@ -80,8 +83,9 @@ i{margin: 0 5px;}
     color: rgb(197, 199, 205);
     font-size: 11px;
 }
-.conversation{
-    background-image: url("/img/mine.jpg");
+.sfondo{
+width: 100%;  
+    
   
 }
 .typeMessage{
