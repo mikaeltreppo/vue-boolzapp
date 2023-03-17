@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booltsapp</title>
+</head>
+<body>
+    
+
+    <div id="app">
+        
+        <div class="mainSx">
+            <header class="userListHeader">
+            </header>
+            <!--notifiche-->
+            <div class="notify">
+            </div>
+            <!--input cerca-->
+            <div class="inputSearch">
+                <input type="text" name="" id="">
+            </div>
+            <!--lista messaggi-->
+            <div v-for="(contact, index) in contacts" class="user">
+                <img :src="contact.avatar" alt="foto user">
+                <div class="nameTime">
+                    <span>{{contact.name}}</span>
+                    <span>12:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mainDx">
+            <header class="userListMessage">
+              
+            </header>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

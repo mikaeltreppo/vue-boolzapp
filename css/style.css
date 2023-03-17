@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainSx{
+    border: solid 1px gray;
+    width: 40%;
+    display: inline-block;
+    background-color: aqua;
+}
+.mainDx{
+    border: solid 1px gray;
+    width: 60%;
+    display: inline-block;
+    background-color: blue;
+}
+.userListHeader{
+    height: 50px;
+    background-color: rgb(234, 234, 234);
+}
+.userListMessage{
+    height: 50px;
+    background-color: chartreuse;
+}
+.notify{
+    height: 60px;
+    background-color: rgb(141, 217, 251);
+}
+.inputSearch{
+    height: 40px;
+    background-color: black;
+    padding: 10px;
+}
+.user{
+    display: flex;
+
+}
+.user img{
+    border-radius: 50%;
+    width:40px
+}
+.nameTime{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
