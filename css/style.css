@@ -33,6 +33,7 @@
 .imgNameHeader{
     display: flex;
     align-items: center;
+    height: 70px;
 }
 
 .notify{
@@ -56,6 +57,7 @@ i{margin: 0 5px;}
 }
 .mainMessage{
     overflow-y: scroll;
+    height: calc(100% - 170px);
 }
 .user img, .ioImg{
     border-radius: 50%;
