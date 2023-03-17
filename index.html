@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Booltsapp</title>
 </head>
+
 <body>
-    
+
 
     <div id="app">
-        
+
         <div class="mainSx">
             <header class="userListHeader">
+                <div class="flexCentereHeaderSx">
+                    <div class="imgNameHeader"> <img src="./img/avatar_io.jpg" alt="io" class="ioImg">
+                        <span> Sofia</span>
+                    </div>
+                    <span class="icons gray"> <i class="fa-solid fa-circle-notch"></i> <i
+                            class="fa-solid fa-message"></i> <i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
             </header>
             <!--notifiche-->
             <div class="notify">
             </div>
             <!--input cerca-->
             <div class="inputSearch">
-                <input type="text" name="" id="">
+                <input type="text" name="" id="search" placeholder="Cerca o inizia una nuova chat">
             </div>
-            <!--lista messaggi-->
-            <div v-for="(contact, index) in contacts" class="user">
-                <img :src="contact.avatar" alt="foto user">
-                <div class="nameTime">
-                    <span>{{contact.name}}</span>
-                    <span>12:00</span>
+            <div class="mainMessage">
+                <!--lista messaggi-->
+                <div v-for="(contact, index) in contacts" class="user">
+                    <div class="leftUser">
+                        <div class="imgUser"> <img :src="contact.avatar" alt="foto user"> </div>
+                        <span> {{contact.name}} <br> <span class="lastMessage gray">Ultimo messaggio
+                                inviato</span></span>
+                    </div>
+                    <div class="rigthUser">
+                        <span class="time gray">12:00</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="mainDx">
-            <header class="userListMessage">
-              
+            <header class="userListHeader">
+                <div class="flexCentereHeaderSx">
+                    <div class="imgNameHeader"> <img src="./img/avatar_7.jpg" alt="io" class="ioImg">
+                        <span> Michele <br>
+                            <span class="lastMessage gray">Ultimo messaggio
+                                inviato</span>
+                        </span>
+                    </div>
+                    <span class="icons gray"> <i class="fa-solid fa-circle-notch"></i> <i
+                            class="fa-solid fa-message"></i> <i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
             </header>
+            <div class="conversation">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora quo asperiores voluptatibus
+                adipisci porro error voluptas suscipit nam consectetur iste iusto quibusdam dolore nulla laborum. Nisi
+                placeat quos magni!
+            </div>
+            <div class="typeMessage">
+                <i class="fa-solid fa-face-laugh"></i> <input type="text" placeholder="Scrivi un messaggio"
+                    id="typeMessage"> <i class="fa-solid fa-paperclip"></i>
+            </div>
         </div>
 
 
@@ -46,4 +81,5 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
