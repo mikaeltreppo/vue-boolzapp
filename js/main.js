@@ -2,13 +2,16 @@ const { createApp } = Vue
 
 createApp({
   data() {
+    
+    
     return {
+    writeMex : "",
       contacts: [
         {
           name: 'Michele',
           avatar: './img/avatar_1.jpg',
           visible: true,
-          
+
           messages: [
             {
               date: '10/01/2020 15:30:55',
@@ -168,5 +171,11 @@ createApp({
         }
       ]
     }
+  },
+  methods: {
+    displayMessage: function () {
+      this.display = true;
+    }
   }
-}).mount('#app')
+}
+).mount('#app')

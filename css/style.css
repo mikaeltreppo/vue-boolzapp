@@ -9,16 +9,17 @@
     height: 90vh;
     width: 70vw;
 }
-.bg{
-   background:linear-gradient( #009688 20%,#d5dbd8 20% );
-   height: 100vh; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+.bg {
+    background: linear-gradient(#009688 20%, #d5dbd8 20%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainSx {
-   
+
     width: 40%;
     display: inline-block;
     background-color: white;
@@ -26,7 +27,7 @@
 }
 
 .mainDx {
-   height: 100%;
+    height: 100%;
     display: inline-block;
     width: 100%;
 }
@@ -55,7 +56,7 @@
     padding: 10px;
     display: flex;
     font-size: small;
-    
+
 }
 
 .inputSearch {
@@ -71,7 +72,8 @@
 i {
     margin: 0 5px;
 }
-.bell{
+
+.bell {
     border-radius: 50%;
     height: 40px;
     background-color: white;
@@ -81,9 +83,11 @@ i {
     justify-content: center;
     margin-right: 10px;
 }
-.bell i{
-    color:rgb(141, 217, 251);
+
+.bell i {
+    color: rgb(141, 217, 251);
 }
+
 .user {
     display: flex;
     margin: 10px 0;
@@ -119,14 +123,16 @@ i {
     justify-content: end;
     margin: 0 10px;
 }
-.conversation{
+
+.conversation {
     height: calc(100% - 100px);
-    overflow-y:auto ;
+    overflow-y: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     background-image: url("../img/mine.jpg");
 }
+
 #search {
     width: 100%;
 }
@@ -141,10 +147,12 @@ i {
 
 
 }
-.flexColumn{
+
+.flexColumn {
     display: flex;
     flex-direction: column;
 }
+
 .typeMessage {
     background-color: rgb(177, 173, 171);
     padding: 5px;
@@ -153,22 +161,29 @@ i {
 #typeMessage {
     width: 90%;
 }
-.mexPc,.mexUser{
+
+.mexPc,
+.mexUser {
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
     display: inline-block;
 
 }
-.mexUser{
+
+.mexUser {
     background-color: rgb(213, 249, 186);
-  
+
 }
-.mexPc{ background-color: white;
+
+.mexPc {
+    background-color: white;
 }
-.f-s{
+
+.f-s {
     align-self: flex-start;
 }
-.f-e{
+
+.f-e {
     align-self: flex-end;
 }
