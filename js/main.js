@@ -6,6 +6,7 @@ createApp({
     
     return {
     writeMex : "",
+    answer : "ok",
       contacts: [
         {
           name: 'Michele',
@@ -175,7 +176,25 @@ createApp({
   methods: {
     displayMessage: function () {
       this.display = true;
-    }
-  }
+    },
+    addItem:function() {
+      let mexWrite = {
+          message: this.writeMex,
+          status: "sent",
+      }
+      this.contacts[0].messages.push(mexWrite);
+      this.writeMex = ""
+      //response
+      
+      let answers={
+        message: this.answer,
+        status:"received"
+      }
+      this.contacts[0].messages.push(answers)
+   
+  },
+  
+}
+
 }
 ).mount('#app')

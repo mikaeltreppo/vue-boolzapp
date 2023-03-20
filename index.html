@@ -76,13 +76,12 @@
                     </div>  
                   
                 </div>  
-                <span class="mexUser f-e" v-if="displayMessage">{{writeMex}}</span>
+                <span v-if="displayMessage"></span>
             </div>
             <div class="typeMessage">
                 <i class="fa-solid fa-face-laugh"></i>
                 <!--input messaggio-->
-                 <input  v-model="writeMex" @keyup.enter="displayMessage" type="text" placeholder="Scrivi un messaggio"
-                    id="typeMessage"> <i class="fa-solid fa-paperclip"></i>
+                 <input  v-model="writeMex"  type="text" placeholder="Scrivi un messaggio" id="typeMessage" @keyup.enter="addItem" keyup.enter="response"><i class="fa-solid fa-paperclip"></i>
             </div>
         </div>
 
