@@ -29,7 +29,7 @@
 .mainDx {
     height: 100%;
     display: inline-block;
-    width: 100%;
+    width: 60%;
 }
 
 .userListHeader {
@@ -139,7 +139,7 @@ i {
 
 .gray {
     color: rgb(121, 123, 130);
-    font-size: 11px;
+    font-size: 9px;
 }
 
 .sfondo {
@@ -159,7 +159,7 @@ i {
 }
 
 #typeMessage {
-    width: 90%;
+    width: 80%;
 }
 
 .mexPc,

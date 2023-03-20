@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-
+        <!--parte destra-->
         <div class="mainDx">
             <header class="userListHeader">
                 <div class="flexCentereHeaderSx">
@@ -74,13 +74,14 @@
                     <div :class="mex.status == 'sent' ? 'mexUser' : 'mexPc'">{{mex.message}}
                         <span class="gray">{{mex.date}}</span>
                     </div>  
-                    <span v-if="displayMessage">{{writeMex}}</span>
-                    
-                </div>
+                  
+                </div>  
+                <span class="mexUser f-e" v-if="displayMessage">{{writeMex}}</span>
             </div>
             <div class="typeMessage">
                 <i class="fa-solid fa-face-laugh"></i>
-                 <input  v-model="writeMex" @keyup.enter="displayMex" type="text" placeholder="Scrivi un messaggio"
+                <!--input messaggio-->
+                 <input  v-model="writeMex" @keyup.enter="displayMessage" type="text" placeholder="Scrivi un messaggio"
                     id="typeMessage"> <i class="fa-solid fa-paperclip"></i>
             </div>
         </div>
