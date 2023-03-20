@@ -69,7 +69,9 @@
                 </div>
             </header>
             <div class="conversation">
-          
+                <div v-for="mex in contacts[0].messages" :class="mex.status == 'sent' ? 'f-e': 'f-s'">
+                    <div :class="mex.status == 'sent' ? 'mexUser' : 'mexPc'">{{mex.message}}</div>
+                </div>
             </div>
             <div class="typeMessage">
                 <i class="fa-solid fa-face-laugh"></i> <input type="text" placeholder="Scrivi un messaggio"
