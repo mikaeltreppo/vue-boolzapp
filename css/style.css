@@ -1,99 +1,150 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#app{
+
+#app {
     display: flex;
-    height: 100vh;
+    height: 90vh;
+    width: 70vw;
 }
-.mainSx{
-    border: solid 1px gray;
+.bg{
+   background:linear-gradient( #009688 20%,#d5dbd8 20% );
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.mainSx {
+   
     width: 40%;
     display: inline-block;
-    background-color:white;
-  
+    background-color: white;
+
 }
-.mainDx{
-    border: solid 1px gray;
+
+.mainDx {
+   height: 100%;
     display: inline-block;
-   width: 100%;
-   
- 
+    width: 100%;
 }
-.userListHeader{
+
+.userListHeader {
     background-color: rgb(234, 234, 234);
 }
-.flexCentereHeaderSx{
+
+.flexCentereHeaderSx {
     display: flex;
     align-items: center;
-   justify-content: space-between;
-  
+    justify-content: space-between;
+
 }
-.imgNameHeader{
+
+.imgNameHeader {
     display: flex;
     align-items: center;
     height: 70px;
+    margin: 0 10px;
 }
 
-.notify{
+.notify {
     height: 60px;
     background-color: rgb(141, 217, 251);
+    padding: 10px;
+    display: flex;
+    font-size: small;
+    
 }
-.inputSearch{
+
+.inputSearch {
     height: 40px;
     padding: 10px;
     background-color: rgb(248, 248, 248);
 }
-.icons{
+
+.icons {
     margin-right: 10px;
 }
-i{margin: 0 5px;}
-.user{
+
+i {
+    margin: 0 5px;
+}
+.bell{
+    border-radius: 50%;
+    height: 40px;
+    background-color: white;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.bell i{
+    color:rgb(141, 217, 251);
+}
+.user {
     display: flex;
     margin: 10px 0;
-    border-bottom: 1px solid gray ;
-    background-color:white;
+    border-bottom: 1px solid gray;
+    background-color: white;
 }
-.mainMessage{
-    overflow-y: scroll;
+
+.mainMessage {
+    overflow-y: auto;
     height: calc(100% - 170px);
 }
-.user img, .ioImg{
+
+.user img,
+.ioImg {
     border-radius: 50%;
-    width:40px;
+    width: 40px;
     margin-right: 10px;
 }
-.ioImg{
+
+.ioImg {
     margin: 10px 0;
 }
-.leftUser{
+
+.leftUser {
     width: 50%;
     display: flex;
 
 }
-.rigthUser{
+
+.rigthUser {
     display: flex;
     width: 50%;
     justify-content: end;
     margin: 0 10px;
 }
-#search{
-    width :100%;
+.conversation{
+    height: calc(100% - 100px);
 }
-.gray{
-    color: rgb(197, 199, 205);
+#search {
+    width: 100%;
+}
+
+.gray {
+    color: rgb(121, 123, 130);
     font-size: 11px;
 }
-.sfondo{
-width: 100%;  
-    
-  
+
+.sfondo {
+    width: 100%;
+
+
 }
-.typeMessage{
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.typeMessage {
     background-color: rgb(177, 173, 171);
     padding: 5px;
 }
-#typeMessage{
+
+#typeMessage {
     width: 90%;
 }
