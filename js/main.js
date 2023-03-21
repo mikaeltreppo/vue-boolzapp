@@ -185,7 +185,7 @@ createApp({
           message: this.writeMex,
           status: "sent",
       }
-      this.contacts[0].messages.push(mexWrite);
+      this.contacts[this.activeImg].messages.push(mexWrite);
       this.writeMex = ""
       //response
       

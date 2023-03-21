@@ -56,10 +56,10 @@
         </div>
         <!--parte destra-->
         <div class="mainDx">
-            <header class="userListHeader">
+            <header class="userListHeader" >
                 <div class="flexCentereHeaderSx">
-                    <div class="imgNameHeader"> <img src="./img/avatar_7.jpg" alt="io" class="ioImg">
-                        <span> Michele <br>
+                    <div class="imgNameHeader"> <img :src="contacts[activeImg].avatar" alt="io" class="ioImg">
+                        <span >{{contacts[activeImg].name}} <br>
                             <span class="lastMessage gray">Ultimo messaggio
                                 inviato alle: 12</span>
                         </span>
