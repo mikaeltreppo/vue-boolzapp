@@ -42,9 +42,9 @@
             </div>
             <div class="mainMessage">
                 <!--lista messaggi-->
-                <div v-for="(contact, index) in contacts" class="user">
+                <div v-for="(contact, index) in contacts" class="user" @click="liveConversation(index)">
                     <div class="leftUser">
-                        <div class="imgUser"> <img :src="contact.avatar" alt="foto user"> </div>
+                        <div class="imgUser"> <img :src="contact.avatar" alt=""> </div>
                         <span> {{contact.name}} <br> <span class="lastMessage gray">Ultimo messaggio
                                 inviato</span></span>
                     </div>
@@ -70,7 +70,7 @@
             </header>
             <!--pagina conversazione-->
             <div class="conversation">
-                <div v-for="mex in contacts[0].messages" :class="mex.status == 'sent' ? 'f-e': 'f-s'">
+                <div v-for="mex in contacts[activeImg].messages" :class="mex.status == 'sent' ? 'f-e': 'f-s'">
                     <div :class="mex.status == 'sent' ? 'mexUser' : 'mexPc'">{{mex.message}}
                         <span class="gray">{{mex.date}}</span>
                     </div>  

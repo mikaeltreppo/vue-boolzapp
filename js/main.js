@@ -7,6 +7,7 @@ createApp({
     return {
     writeMex : "",
     answer : "ok",
+    activeImg : 0,
       contacts: [
         {
           name: 'Michele',
@@ -170,8 +171,10 @@ createApp({
             }
           ],
         }
-      ]
+      ] 
     }
+
+
   },
   methods: {
     displayMessage: function () {
@@ -190,10 +193,14 @@ createApp({
         message: this.answer,
         status:"received"
       }
-      this.contacts[0].messages.push(answers)
+      this.contacts[this.activeImg].messages.push(answers)
    
   },
-  
+  liveConversation:function(index){
+    this.activeImg = index;
+    console.log(this.activeImg)
+  }
+
 }
 
 }
