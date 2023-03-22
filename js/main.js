@@ -178,10 +178,10 @@ createApp({
 
   },
   methods: {
-    displayMessage: function () {
+    displayMessage() {
       this.display = true;
     },
-    addItem: function () {
+    addItem() {
       let mexWrite = {
         message: this.writeMex,
         status: "sent",
@@ -189,24 +189,31 @@ createApp({
       this.contacts[this.activeImg].messages.push(mexWrite);
       this.writeMex = ""
       //response
-    setTimeout(this.delay,1000)
+      setTimeout(this.delay, 1000)
     },
-    liveConversation: function (index) {
+    liveConversation(index) {
       this.activeImg = index;
       console.log(this.activeImg)
     },
-    search: function () {
-      searchDestructured = this.searchInput.split('');
-      console.log(searchDestructured);
-      nameDestructured = this.contacts[this.activeImg].name.split('')
-      console.log(nameDestructured);
-    },
-    delay: function(){
+
+    // funzione ritardo 
+    delay() {
       let answers = {
         message: this.answer,
         status: "received"
       }
       this.contacts[this.activeImg].messages.push(answers)
+    },
+    //funzione parte ricerc contatto
+    searchContact() {
+      this.contacts.forEach(element => {
+          if (!element.name.toLowerCase().includes(this.searchInput.toLowerCase())) {
+              element.visible = false;
+          } else {
+              element.visible = true;
+          }
+      });
+    
     }
 
   }

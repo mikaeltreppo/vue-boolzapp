@@ -18,6 +18,7 @@
     align-items: center;
 }
 
+
 .mainSx {
 
     width: 40%;
@@ -88,7 +89,7 @@ i {
     color: rgb(141, 217, 251);
 }
 .d-none{
-    display: none;
+    display: none !important;
 }
 .user {
     display: flex;
