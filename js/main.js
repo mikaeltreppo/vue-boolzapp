@@ -2,12 +2,13 @@ const { createApp } = Vue
 
 createApp({
   data() {
-    
-    
+
+
     return {
-    writeMex : "",
-    answer : "ok",
-    activeImg : 0,
+      writeMex: "",
+      answer: "ok",
+      activeImg: 0,
+      searchInput: "",
       contacts: [
         {
           name: 'Michele',
@@ -171,7 +172,7 @@ createApp({
             }
           ],
         }
-      ] 
+      ]
     }
 
 
@@ -180,28 +181,35 @@ createApp({
     displayMessage: function () {
       this.display = true;
     },
-    addItem:function() {
+    addItem: function () {
       let mexWrite = {
-          message: this.writeMex,
-          status: "sent",
+        message: this.writeMex,
+        status: "sent",
       }
       this.contacts[this.activeImg].messages.push(mexWrite);
       this.writeMex = ""
       //response
-      
-      let answers={
+    setTimeout(this.delay,1000)
+    },
+    liveConversation: function (index) {
+      this.activeImg = index;
+      console.log(this.activeImg)
+    },
+    search: function () {
+      searchDestructured = this.searchInput.split('');
+      console.log(searchDestructured);
+      nameDestructured = this.contacts[this.activeImg].name.split('')
+      console.log(nameDestructured);
+    },
+    delay: function(){
+      let answers = {
         message: this.answer,
-        status:"received"
+        status: "received"
       }
       this.contacts[this.activeImg].messages.push(answers)
-   
-  },
-  liveConversation:function(index){
-    this.activeImg = index;
-    console.log(this.activeImg)
-  }
+    }
 
-}
+  }
 
 }
 ).mount('#app')
